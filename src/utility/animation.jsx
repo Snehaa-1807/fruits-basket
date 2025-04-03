@@ -46,7 +46,6 @@ const FadeRight = (delay = 0, duration = 1) => ({
   },
 });
 
-// Export all animation functions as an object
 const animations = { FadeUp, FadeLeft, FadeRight };
 
 export default animations;
