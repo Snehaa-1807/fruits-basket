@@ -45,7 +45,7 @@ const Hero = () => {
                     <span>
                         <IoBagHandleOutline/>
                     </span>
-                    OrederNow
+                    Oreder Now
                 </button>
             </motion.div>
             </div>
