@@ -9,7 +9,7 @@ const Hero = () => {
     const {FadeRight}=animations
   return (
     <section>
-        <div className='container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative'>
+        <div className='container grid grid-cols-1 md:grid-cols-2 min-h-[650px] relative ml-4'>
         <div className='flex flex-col justify-center py-14 md:py-0 relative z-10'>
         <div className='text-center md:text-left space-y-6 lg:max-w-[400px'>
             <motion.h1
@@ -56,7 +56,7 @@ const Hero = () => {
     initial={{opacity: 0, y: 200, rotate: 75}}
     animate={{opacity: 1, y: 0, rotate: 0}}
     transition = {{duration:1 , delay:0.2}}
-    src={HeroPng} alt="" className='w-[350px] md:w-[550px] drop-shadow-none ' />
+    src={HeroPng} alt="" className='w-[350px] md:w-[550px] drop-shadow-none mr-[-100px] ' />
 </div>
 <div  className='absolute top-14 md:top-0 right-1/2 blur-sm opacity-80 rotate-[4deg]'>
     <motion.img

@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { FaLeaf } from "react-icons/fa";
 import { MdOutlineShoppingCart, MdMenu } from "react-icons/md"; 
 import { ResponsiveMenu } from "./ResponsiveMenu";
-import {motion} from 'framer-motion'
-import { delay } from "framer-motion";
+import { motion } from "framer-motion";
 
 const NavbarMenu = [
   { id: 1, title: "Home", link: "/" },
@@ -14,21 +13,21 @@ const NavbarMenu = [
 ];
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false); // Fixed useState import
+  const [open, setOpen] = useState(false); 
 
   return (
     <div> 
       <nav className="bg-white shadow-md">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}  // Fixed typo
+          animate={{ opacity: 1 }}  
           transition={{ duration: 0.5, delay: 0.5 }}
           className="container mx-auto flex justify-between items-center py-4 px-6"
         >
           {/* Logo */}
-          <div className="text-2xl flex items-center gap-2 font-bold uppercase">
+          <div className="text-2xl flex items-center gap-2 font-bold uppercase ml-[-80px]">
             <p className="text-red-600">Fruit</p>
-            <p className="text-orange-300">Basket</p>
+            <p className="text-orange-400">Basket</p>
             <FaLeaf className="text-green-500" />
           </div>
 

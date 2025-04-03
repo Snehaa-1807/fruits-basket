@@ -81,16 +81,17 @@ const MenusData = [
 const Menus = () => {
   return (
     <section>
-      <div className="container pt-12 pb-20 p-3">
+      <div className="container pt-12 pb-20 p-3 ml-[50px]">
         <motion.h1
           initial={{ opacity: 0, x: -200 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, delay: 0.3 }}
           className="text-2xl font-bold text-left pb-10 uppercase"
-        >
-          Our Menu
+        ><div className="container  p-3 ml-[-30px]"> 
+           Our Menu
+           </div>
         </motion.h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 ml-4">
           {MenusData.map((menu) => (
             <motion.div
               key={menu.id} 
